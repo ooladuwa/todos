@@ -6,8 +6,8 @@ const SinglePage = () => {
     {
       slug: "about-app",
       title: "About the App",
-      "description":
-      "In this Todos app, you can add, edit, mark complete, and delete items. To edit an item, double click on it. Press the enter key to resubmit your changes. This app will save(persist) your data in the browser's local storage. Whether you reload, close, or reopen it, you still have access to your todo items.",
+      description:
+      "In this Todos app, you can add, edit, mark complete, and delete items. To edit an item, double click on it. Press the enter key to resubmit your changes. This app will save(persist) your data in the browser's local storage. Whether you reload, close, or reopen it, you still have access to your todo items. If you like this app, please contact me:",
     },
     {
       slug: "about-author",
@@ -16,12 +16,13 @@ const SinglePage = () => {
       "This app was built by Onaje Oladuwa(Naj) with guidance from a tutorial by Ibas Majid. Naj is a current student at Lambda School. He began his coding journey in late 2020 after a successful career as a classroom teacher. Naj is open to work and you can reach him via:",
     },
   ]
-    const contacts = () => {
+    
+  const Contacts = () => {
      return(
-     <>
-      <a href="https://www.linkedin.com/in/ooladuwa/">LinkedIn</a>
-      <a href="https://twitter.com/ooladuwa">Twitter</a>
-      </>
+     <div className="">
+        <a className="SinglePage--links" href="https://www.linkedin.com/in/ooladuwa/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a className="SinglePage--links" href="https://twitter.com/ooladuwa" target="_blank" rel="noreferrer">Twitter</a>
+      </div>
      );
     }
 
@@ -33,6 +34,7 @@ const SinglePage = () => {
     <div className="main--content">
       <h1>{title}</h1>
       <p>{description}</p>
+      <Contacts />
     </div>
   );
 };

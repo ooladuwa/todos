@@ -12,21 +12,29 @@ body {
   height: 100vh;
 }
 .container {
+  background-image: url("https://i.ibb.co/RQvnDJX/Clipart-Key-346260.png");
+  /* url("https://i.ibb.co/qNRpyyk/Screen-Shot-2021-03-26-at-5-18-43-PM.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
+  
 }
 
 .inner {
-  width: 100%;
+  width: 67%;
   padding: 8rem 10px 4rem;
+  margin-left: 2.5rem;
+  margin-top: -42rem;
 }
 
 .form-container {
-  width: 100%;
+  width:100%;
   margin-bottom: 20px;
   display: flex;
   border-radius: calc(0.5 * 100px);
@@ -37,7 +45,7 @@ body {
 .input-text {
   font-size: 1rem;
   font-weight: 400;
-  width: 85%;
+  width: 100%;
   padding-right: 5px;
   padding-left: 10px;
   border-radius: calc(0.5 * 100px);
@@ -147,4 +155,22 @@ a {
 
 .main__content p {
   line-height: 25px;
+}
+
+/* single page */
+
+.main--content h1 {
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.main--content p {
+  width: 50%;
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.main--content a {
+  color: black;
+  margin-left: .5rem;
 }
