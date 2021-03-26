@@ -6,16 +6,25 @@ const SinglePage = () => {
     {
       slug: "about-app",
       title: "About the App",
-      description:
-        "In this app, you can add, delete, submit and edit items. To edit items, simply double click on it. Once you are done, press the enter key to resubmit. This app will persist your data in the browser local storage. So whether you reload, close your app or reopened it, you still have access to your to-dos items.",
+      "description":
+      "In this Todos app, you can add, edit, mark complete, and delete items. To edit an item, double click on it. Press the enter key to resubmit your changes. This app will save(persist) your data in the browser's local storage. Whether you reload, close, or reopen it, you still have access to your todo items.",
     },
     {
       slug: "about-author",
       title: "About the Author",
       description:
-        "This app was developed by Ibas Majid, a self-taught web developer and a technical writer. He is opened to freelance Gig. So go ahead and connect with ibas on Twitter @ibaslogic.",
+      "This app was built by Onaje Oladuwa(Naj) with guidance from a tutorial by Ibas Majid. Naj is a current student at Lambda School. He began his coding journey in late 2020 after a successful career as a classroom teacher. Naj is open to work and you can reach him via:",
     },
-  ];
+  ]
+    const contacts = () => {
+     return(
+     <>
+      <a href="https://www.linkedin.com/in/ooladuwa/">LinkedIn</a>
+      <a href="https://twitter.com/ooladuwa">Twitter</a>
+      </>
+     );
+    }
+
   const { slug } = useParams();
   const aboutContent = aboutData.find((item) => item.slug === slug);
   const { title, description } = aboutContent;
