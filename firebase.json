@@ -1,9 +1,7 @@
 {
-  {
-    "hosting": {
-      "site": "todos-e91fc",
-      "public": "public",
-      "ignore": [
+  "hosting": {
+    "public": "build",
+    "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
